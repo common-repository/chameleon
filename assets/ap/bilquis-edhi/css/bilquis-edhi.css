@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+ul.ap_pagination *, ul.ap_pagination:before *, ul.ap_pagination:after *{
+	box-sizing:border-box;
+}
+ul.ap_pagination {
+	background: none repeat scroll 0 0 #FFF;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 0px 0px 20px 0px;
+	border-top: 0;
+	width: 100%;
+	clear: both;
+	margin: 10px 0;
+}
+ul.ap_pagination li{
+	padding:8px 10px;
+	margin:0px;
+}
+ul.layout_V.ap_pagination {
+	overflow: hidden;
+	width: 28px;	
+}
+ul.layout_V.ap_pagination li{
+	padding:2px 2%;
+	margin:0px;
+	width:98%;
+}
+ul.ap_pagination li {
+	padding: 0;
+	width: 32px;
+	margin-bottom: 4px;
+	margin-right: 4px;
+	background-color: #240057;
+	border: medium none;
+	box-shadow: 0 2px 1px #240057, 0px 2px 1px #240057;
+	cursor: pointer;
+	font-size: 14px;
+	overflow: hidden;
+	line-height: 24px;
+	color:#fff;
+}
+ul.ap_pagination li > small {
+	font-size: 14px;
+	line-height: 30px;
+	color: #ffffff4a;
+}
+ul.ap_pagination li:not(.ap_reset) a {
+	background-color: #240057;
+    border: medium none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+	display:block;
+	overflow: hidden;
+	color: #fff;
+	border: 4px solid #240057;
+	
+}
+ul.ap_pagination li:not(.ap_reset) a.selected, 
+ul.ap_pagination li:not(.ap_reset) a:hover {
+	background-color: #fff;
+	color: #240057;
+	overflow: hidden;
+	border: 4px solid #9d9512;
+	transform: translateX(0%) translateY(0%) rotateZ(45deg);
+	padding: 0;
+	text-shadow: 0px 1px #ffb300;
+	border-radius: 18px;
+	text-decoration: none;
+}
+ul.ap_pagination li.ap_reset a.selected,
+ul.ap_pagination li.ap_reset a:hover{
+	background-color: transparent;	
+}
+ul.ap_pagination li.ap-empty {
+	line-height: 32px;
+	opacity:0.8;
+}
+.ap_reset {
+	background-image: url("../../../../images/reset-light.png") !important;
+}

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+		
+	ul.ap_pagination {
+		background: none repeat scroll 0 0 #FFF;		
+		padding: 0px 0px 20px 0px;
+		border-top: 0;
+		width: auto;
+		clear: both;
+		margin: 10px auto;
+		float: none;
+	}
+	
+	ul.ap_pagination li{
+		padding:8px 10px;
+		margin:0px;
+	}
+	ul.ap_pagination li small{
+		font-size:14px;
+	}
+	ul.layout_V.ap_pagination {
+		overflow: hidden;
+		width: 28px;	
+	}
+	ul.layout_V.ap_pagination li{
+		padding:2px 2%;
+		margin:0px;
+		width:98%;
+	}
+	ul.ap_pagination li {
+
+		display: block;
+		float: left;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		padding: 0;
+		font-size: 18px;
+		background-color: #FDB9FC;		
+		border: 1px solid #FDB9FC;
+		text-decoration: none;
+		border-radius: 3px;
+		transition: all ease .4s;
+		min-width: 32px;
+		opacity: 1;
+		cursor: default;
+		font-size: 16px;
+		cursor:pointer;
+
+	}
+	ul.ap_pagination li a{
+		padding: 4px 10px;
+		width:32px;
+		height:32px;
+		display:block;
+	}
+	ul.ap_pagination li.ap-empty {
+		opacity: 1;
+		padding: 4px 10px;
+		color: #fff;
+	}	
+	
+	ul.ap_pagination li.ap_reset,
+	ul.ap_pagination li:not(.ap-empty):hover,
+	ul.ap_pagination li.ap-selected{
+		color: #fff;
+		border-color: #FF00E4;
+		background-color: #FF00E4;
+	}
+	ul.ap_pagination li:not(.ap-empty) a{
+		color: #fff;
+	}
+	ul.ap_pagination li:not(.ap-empty):hover a, 
+	ul.ap_pagination li.ap-selected a {
+		color: #fff;
+		text-decoration: none;
+		display: block;
+	}

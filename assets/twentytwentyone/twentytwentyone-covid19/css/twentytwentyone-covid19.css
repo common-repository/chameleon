@@ -1,0 +1,817 @@
+:root {
+
+
+
+	/* Font Family */
+
+	--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+
+	--global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+
+
+
+	/* Font Size */
+
+	--global--font-size-base: 1.25rem;
+
+	--global--font-size-xs: 1rem;
+
+	--global--font-size-sm: 1.125rem;
+
+	--global--font-size-md: 1.25rem;
+
+	--global--font-size-lg: 1.5rem;
+
+	--global--font-size-xl: 2.25rem;
+
+	--global--font-size-xxl: 3rem;
+
+	--global--font-size-xxxl: 5rem;
+
+	--global--font-size-page-title: var(--global--font-size-lg);
+
+	--global--letter-spacing: normal;
+	
+	--button1--font-size: 18px;
+
+
+
+	/* Line Height */
+
+	--global--line-height-body: 1.7;
+
+	--global--line-height-heading: 1.3;
+
+	--global--line-height-page-title: 1.1;
+
+
+
+	/* Headings */
+
+	--heading--font-family: var(--global--font-primary);
+
+	--heading--font-size-h6: var(--global--font-size-xs);
+
+	--heading--font-size-h5: var(--global--font-size-sm);
+
+	--heading--font-size-h4: var(--global--font-size-lg);
+
+	--heading--font-size-h3: calc(1.25 * var(--global--font-size-lg));
+
+	--heading--font-size-h2: var(--global--font-size-lg);
+
+	--heading--font-size-h1: var(--global--font-size-page-title);
+
+	--heading--letter-spacing-h6: 0.05em;
+
+	--heading--letter-spacing-h5: 0.05em;
+
+	--heading--letter-spacing-h4: var(--global--letter-spacing);
+
+	--heading--letter-spacing-h3: var(--global--letter-spacing);
+
+	--heading--letter-spacing-h2: var(--global--letter-spacing);
+
+	--heading--letter-spacing-h1: var(--global--letter-spacing);
+
+	--heading--line-height-h6: var(--global--line-height-heading);
+
+	--heading--line-height-h5: var(--global--line-height-heading);
+
+	--heading--line-height-h4: var(--global--line-height-heading);
+
+	--heading--line-height-h3: var(--global--line-height-heading);
+
+	--heading--line-height-h2: var(--global--line-height-heading);
+
+	--heading--line-height-h1: var(--global--line-height-page-title);
+
+	--heading--font-weight: normal;
+
+	--heading--font-weight-page-title: 300;
+
+	--heading--font-weight-strong: 600;
+
+
+
+	/* Block: Latest posts */
+
+	--latest-posts--title-font-family: var(--heading--font-family);
+
+	--latest-posts--title-font-size: var(--heading--font-size-h3);
+
+	--latest-posts--description-font-family: var(--global--font-secondary);
+
+	--latest-posts--description-font-size: var(--global--font-size-sm);
+
+	--list--font-family: var(--global--font-secondary);
+
+	--definition-term--font-family: var(--global--font-primary);
+
+
+
+	/* Colors */
+
+	--global--color-black: #000;
+
+	--global--color-dark-gray: #28303d;
+
+	--global--color-gray: #39414d;
+
+	--global--color-light-gray: #f0f0f0;
+
+	--global--color-green: #d1e4dd;
+
+	--global--color-blue: #d1dfe4;
+
+	--global--color-purple: #d1d1e4;
+
+	--global--color-red: #e4d1d1;
+
+	--global--color-orange: #e4dad1;
+
+	--global--color-yellow: #eeeadd;
+
+	--global--color-white: #fff;
+
+	--global--color-white-50: rgba(255, 255, 255, 0.5);
+
+	--global--color-white-90: rgba(255, 255, 255, 0.9);
+
+	--global--color-primary: var(--global--color-dark-gray);
+
+
+
+	/* Body text color, site title, footer text color. */
+
+	--global--color-secondary: var(--global--color-gray);
+
+
+
+	/* Headings */
+
+	--global--color-primary-hover: var(--global--color-primary);
+
+	--global--color-background: var(--global--color-green);
+
+
+
+	/* Mint, default body background */
+
+	--global--color-border: var(--global--color-primary);
+
+
+
+	/* Used for borders (separators) */
+
+
+
+	/* Spacing */
+
+	--global--spacing-unit: 10px;
+
+	--global--spacing-measure: unset;
+
+	--global--spacing-horizontal: 25px;
+
+	--global--spacing-vertical: 20px;
+
+
+
+	/* Elevation */
+
+	--global--elevation: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+
+
+
+	/* Forms */
+
+	--form--font-family: var(--global--font-secondary);
+
+	--form--font-size: var(--global--font-size-sm);
+
+	--form--line-height: var(--global--line-height-body);
+
+	--form--color-text: var(--global--color-dark-gray);
+
+	--form--color-ranged: var(--global--color-secondary);
+
+	--form--label-weight: 500;
+
+	--form--border-color: var(--global--color-secondary);
+
+	--form--border-width: 0.5px;
+
+	--form--border-radius: 0;
+
+	--form--spacing-unit: calc(0.5 * var(--global--spacing-unit));
+
+
+
+	/* Cover block */
+
+	--cover--height: calc(15 * var(--global--spacing-vertical));
+
+	--cover--color-foreground: var(--global--color-white);
+
+	--cover--color-background: var(--global--color-black);
+
+
+
+	/* Buttons */
+
+	--button--color-text: var(--global--color-background);
+
+	--button--color-text-hover: var(--global--color-secondary);
+
+	--button--color-text-active: var(--global--color-secondary);
+
+	--button--color-background: var(--global--color-secondary);
+
+	--button--color-background-active: var(--global--color-background);
+
+	--button--font-family: var(--global--font-primary);
+
+	--button--font-size: var(--button1--font-size);
+
+	--button--font-weight: 500;
+
+	--button--line-height: 1.7;
+
+	--button--border-width: 1.5px;
+
+	--button--border-radius: 0;
+
+	--button--padding-vertical: 3px;
+
+	--button--padding-horizontal: calc(3 * var(--button--padding-vertical));
+
+
+
+	/* entry */
+
+	--entry-header--color: var(--global--color-primary);
+
+	--entry-header--color-link: currentColor;
+
+	--entry-header--color-hover: var(--global--color-primary-hover);
+
+	--entry-header--color-focus: var(--global--color-secondary);
+
+	--entry-header--font-size: var(--heading--font-size-h2);
+
+	--entry-content--font-family: var(--global--font-secondary);
+
+	--entry-author-bio--font-family: var(--heading--font-family);
+
+	--entry-author-bio--font-size: var(--heading--font-size-h4);
+
+
+
+	/* Header */
+
+	--branding--color-text: var(--global--color-primary);
+
+	--branding--color-link: var(--global--color-primary);
+
+	--branding--color-link-hover: var(--global--color-secondary);
+
+	--branding--title--font-family: var(--global--font-primary);
+
+	--branding--title--font-size: var(--global--font-size-xxl);
+
+	--branding--title--font-size-mobile: var(--heading--font-size-h4);
+
+	--branding--title--font-weight: normal;
+
+	--branding--title--text-transform: uppercase;
+
+	--branding--description--font-family: var(--global--font-secondary);
+
+	--branding--description--font-size: var(--global--font-size-sm);
+
+	--branding--description--font-family: var(--global--font-secondary);
+
+	--branding--logo--max-width: 300px;
+
+	--branding--logo--max-height: 100px;
+
+	--branding--logo--max-width-mobile: 96px;
+
+	--branding--logo--max-height-mobile: 96px;
+
+
+
+	/* Main navigation */
+
+	--primary-nav--font-family: var(--global--font-secondary);
+
+	--primary-nav--font-family-mobile: var(--global--font-primary);
+
+	--primary-nav--font-size: var(--global--font-size-md);
+
+	--primary-nav--font-size-sub-menu: var(--global--font-size-xs);
+
+	--primary-nav--font-size-mobile: var(--global--font-size-sm);
+
+	--primary-nav--font-size-sub-menu-mobile: var(--global--font-size-sm);
+
+	--primary-nav--font-size-button: var(--global--font-size-xs);
+
+	--primary-nav--font-style: normal;
+
+	--primary-nav--font-style-sub-menu-mobile: normal;
+
+	--primary-nav--font-weight: normal;
+
+	--primary-nav--font-weight-button: 500;
+
+	--primary-nav--color-link: var(--global--color-primary);
+
+	--primary-nav--color-link-hover: var(--global--color-primary-hover);
+
+	--primary-nav--color-text: var(--global--color-primary);
+
+	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
+
+	--primary-nav--border-color: var(--global--color-primary);
+
+
+
+	/* Pagination */
+
+	--pagination--color-text: var(--global--color-primary);
+
+	--pagination--color-link-hover: var(--global--color-primary-hover);
+
+	--pagination--font-family: var(--global--font-secondary);
+
+	--pagination--font-size: var(--global--font-size-lg);
+
+	--pagination--font-weight: normal;
+
+	--pagination--font-weight-strong: 600;
+
+
+
+	/* Footer */
+
+	--footer--color-text: var(--global--color-primary);
+
+	--footer--color-link: var(--global--color-primary);
+
+	--footer--color-link-hover: var(--global--color-primary-hover);
+
+	--footer--font-family: var(--global--font-primary);
+
+	--footer--font-size: var(--global--font-size-sm);
+
+
+
+	/* Block: Pull quote */
+
+	--pullquote--font-family: var(--global--font-primary);
+
+	--pullquote--font-size: var(--heading--font-size-h3);
+
+	--pullquote--font-style: normal;
+
+	--pullquote--letter-spacing: var(--heading--letter-spacing-h4);
+
+	--pullquote--line-height: var(--global--line-height-heading);
+
+	--pullquote--border-width: 3px;
+
+	--pullquote--border-color: var(--global--color-primary);
+
+	--pullquote--color-foreground: var(--global--color-primary);
+
+	--pullquote--color-background: var(--global--color-background);
+
+	--quote--font-family: var(--global--font-secondary);
+
+	--quote--font-size: var(--global--font-size-md);
+
+	--quote--font-size-large: var(--global--font-size-xl);
+
+	--quote--font-style: normal;
+
+	--quote--font-weight: 700;
+
+	--quote--font-weight-strong: bolder;
+
+	--quote--font-style-large: normal;
+
+	--quote--font-style-cite: normal;
+
+	--quote--line-height: var(--global--line-height-body);
+
+	--quote--line-height-large: 1.35;
+
+	--separator--border-color: var(--global--color-border);
+
+	--separator--height: 1px;
+
+
+
+	/* Block: Table */
+
+	--table--stripes-border-color: var(--global--color-light-gray);
+
+	--table--stripes-background-color: var(--global--color-light-gray);
+
+	--table--has-background-text-color: var(--global--color-dark-gray);
+
+
+
+	/* Widgets */
+
+	--widget--line-height-list: 1.9;
+
+	--widget--line-height-title: 1.4;
+
+	--widget--font-weight-title: 700;
+
+	--widget--spacing-menu: calc(0.66 * var(--global--spacing-unit));
+
+
+
+	/* Admin-bar height */
+
+	--global--admin-bar--height: 0;
+
+}
+
+/* Menu */
+
+.theme-twentytwentyone .primary-menu-container {
+	left: 35px;
+}
+
+
+.primary-navigation ul.sub-menu,
+.theme-twentytwentyone .primary-menu-container .menu-wrapper {
+    background: rgba(210, 211, 236, 0.5);
+    padding: 5px;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+	margin-top: 15px;
+	
+}
+
+.theme-twentytwentyone .primary-menu-container .menu-wrapper:visited {
+	text-decoration:none;
+	background-color: transparent;
+}
+
+.theme-twentytwentyone .site-main .woocommerce-breadcrumb,
+.theme-twentytwentyone .site-main .related > h2,
+.theme-twentytwentyone .site-main .product_title,
+.theme-twentytwentyone .site-main .page-title,
+.theme-twentytwentyone .site-main .entry-title,
+.theme-twentytwentyone .woocommerce-products-header__title {
+	background: rgba(255,255,255,0.5);
+	padding: 10px 50px;
+	border-bottom: 1px solid var(--global--color-border);
+	padding-bottom: 10px;
+}
+.theme-twentytwentyone .woocommerce-products-header {
+	border-bottom: none;
+}
+
+
+.primary-navigation ul.sub-menu .menu-item a,
+.primary-navigation ul.sub-menu .menu-item a:hover {
+	text-decoration:none;
+	background-color: rgba(210, 211, 236, 0.7);
+}
+
+
+/* Sidebar */
+
+.theme-twentytwentyone ul#sidebar-right,
+.theme-twentytwentyone ul#sidebar-right ul {
+	list-style-type:none;
+	padding: 0px;
+}
+
+.theme-twentytwentyone ul#sidebar-right ul {
+	padding: 0 10px;
+}
+
+.woocommerce-checkout ul {
+	list-style-type: none;
+	display:none
+}
+
+.theme-twentytwentyone .widgettitle {
+	background-color: rgb(57, 65, 77);
+	padding: 10px 20px;
+	color: white;
+	width:100%;
+	box-sizing: unset;
+	margin-left: -20px;
+
+}
+
+
+
+/* Products */
+
+
+.theme-twentytwentyone .woocommerce .content-area .site-main {
+	margin: 0;
+	background-color: rgba(255,255,255);
+}
+
+
+.theme-twentytwentyone .content-area {
+	padding:50px;	
+}
+
+
+.theme-twentytwentyone .site-main ul.products li {
+	border: 1px solid rgba(0,0,0,0.2);
+	padding:25px;
+	margin-bottom: 40px;
+}
+
+
+/* Post/Page/Product */
+
+.singular .entry-header,
+.alignwide {
+	padding-bottom: 0;
+	border-bottom: none;
+	width: 100%;
+	max-width: none;
+}
+.theme-twentytwentyone .entry-content-left {
+	width:65%;
+	float:left;
+	padding-left: 50px;
+}
+
+.theme-twentytwentyone .entry-content-right {
+	width:30%;
+	float:right;
+	padding-right: 50px;
+}
+
+
+.theme-twentytwentyone .type-product,
+.theme-twentytwentyone .type-post,
+.theme-twentytwentyone .type-page {
+	background: rgba(210, 211, 236, 0.5);
+	padding:50px 0;
+	border-radius: 5px;
+	border: 1px solid rgba(255,255,255,0.7);
+}
+
+.theme-twentytwentyone h3, 
+.theme-twentytwentyone h2, {
+	font-size: var(--global--font-size-md);
+}
+
+ul, ol,
+.theme-twentytwentyone .entry-content p {
+	font-size: var(--global--font-size-sm);
+	font-weight: normal;
+}
+
+.single-product form.cart input {
+	padding: 2px 12px;	
+}
+
+
+/*.theme-twentytwentyone .woocommerce-Reviews-title {
+	font-size: var(var(--global--font-size-md)*/
+
+/* Navigation */
+
+.theme-twentytwentyone .navigation.post-navigation {
+	background-color: rgba(210, 211, 236, 0.3);
+	width: 1080px;
+	padding: 15px 15px 15px 15px;
+	border: 1px solid rgba(255,255,255,0.5);
+	border-radius: 5px;
+}
+
+.theme-twentytwentyone .post-navigation a p.meta-nav {
+	background-color: rgb(57, 65, 77);
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid rgba(255,255,255,0.5);
+	max-width: 170px;
+	color: white;
+}
+
+.theme-twentytwentyone .post-navigation a p.meta-nav {
+	font-size:var(--global--font-size-xs);	
+}
+
+
+.theme-twentytwentyone .post-navigation a p.post-title{
+	margin: auto;
+	padding: 15px 18px;
+	font-size:  0.9rem;
+}
+
+
+.theme-twentytwentyone .post-navigation a p.meta-nav:hover {
+	background-color:transparent;
+	color: rgb(57, 65, 77);
+	border: 1px solid var(--global--color-border);
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a,
+.woocommerce-account .woocommerce-MyAccount-navigation li a:hover,
+.theme-twentytwentyone .post-navigation a:hover {
+	text-decoration:none;
+}
+
+.theme-twentytwentyone .type-product {
+	padding: 50px 20px 20px 20px;
+}
+
+.theme-twentytwentyone .type-product .onsale {
+	right: calc(50% - .7rem);
+	margin-top: 31px;
+}
+
+.theme-twentytwentyone li.type-product .onsale {
+	right: calc(5% - .7rem);
+	margin-top: 16px;
+	width: 18%;
+	height: auto;
+	font-size: 14px;
+}
+
+
+/* Comments Area */
+
+.theme-twentytwentyone .comments-area{
+	padding: 15px;
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 5px;
+	background: rgba(210, 211, 236, 0.5);
+	color:rgb(57, 65, 77);
+}
+
+/*.theme-twentytwentyone .site-main .related h2,
+.theme-twentytwentyone .site-main .product_title,
+.theme-twentytwentyone .site-main .page-title,
+.theme-twentytwentyone .woocommerce-products-header,
+.theme-twentytwentyone .site-main .entry-title {
+
+	border-bottom: 1px solid var(--global--color-border);
+	padding-bottom: 10px;
+}*/
+
+.theme-twentytwentyone .comment-form textarea {
+	background-color: rgba(210, 211, 236, 0.5);
+	border-radius: 5px;
+	right: 3px;
+	position: relative;
+}
+.theme-twentytwentyone .site .button,
+.theme-twentytwentyone input[type="submit"] {
+    position: relative;
+    font-size: var(--global--font-size-xs);
+	color:#FFF;
+	border-radius: 5px;
+}
+
+/* Widget */
+
+.theme-twentytwentyone .widget{
+	border: 1px solid rgba(255,255,255,0.7);
+	padding:15px 20px;
+	margin-bottom: 40px;
+	
+}
+
+.theme-twentytwentyone .widget-area {
+	padding: 15px 30px;
+	background-color: rgba(210, 211, 236, 0.5);
+	width: 92%;
+	margin: 0px 50px;
+	max-width: none;
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 5px;
+}
+
+
+
+
+/* My Account */
+
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a {
+	font-size: 20px;
+	padding: 10px;
+	position: relative;
+	float: left;
+	right: 87px;
+}
+
+
+.woocommerce-account table.account-orders-table {
+	margin-top: 7px;
+	border: 0;
+	margin-bottom: 1rem;
+	right: 70px;
+	position: relative;
+	width: max-content;
+}
+
+.woocommerce-account table.account-orders-table th {
+	font-size:18px;
+}
+
+
+.woocommerce-account table.account-orders-table td {
+	width: 0%;
+	font-size: 14px;
+	text-align:center;
+	padding: 0 20px;
+}
+
+.theme-twentytwentyone .site-main .related > h2,
+.woocommerce-account table.account-orders-table .button {
+	padding-right: 5px;
+	padding-left: 5px;
+	font-size:14px;
+}
+
+/* Cart */
+
+
+.woocommerce-page table.cart img {
+	max-width: 150px;
+	max-height: 150px;
+	padding: 8px;
+}
+
+
+
+
+select{
+	font-size:16px;
+}
+
+a,
+a:hover,
+select:focus,
+input[type=submit]:focus:not(.has-background) {
+
+	outline-offset: none;
+	outline: none;
+	text-decoration-line: none;	
+}
+
+.woocommerce-pagination .next.page-numbers, .woocommerce-pagination .prev.page-numbers, .woocommerce-pagination a.page-numbers, .woocommerce-pagination span.page-numbers {
+	padding:8px 10px;
+}
+
+.woocommerce-pagination a.page-numbers:hover {
+	background-color:#CCC;
+}
+
+.page-numbers.current:active {
+	font-weight: 500;
+}
+
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, .site textarea:focus, input[type="checkbox"]:focus{
+	outline:none;
+}
+	
+	
+	
+	
+	
+	
+
+.wp-block-navigation:not(.has-text-color) .wp-block-navigation-link > a:hover {
+
+	text-decoration: none;
+	text-decoration-style: none;
+
+}
+
+
+
+
+.widget-area a {
+	text-decoration:none;
+}
+
+.site-footer  > .site-info {
+	padding-top:0;
+}
+
+table td, table th {
+	border:0;
+	padding:1px;
+}
